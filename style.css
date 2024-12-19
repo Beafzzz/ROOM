@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", serif;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.top-info{
+    display: flex; 
+    width: 100%;
+    justify-content: flex-end; 
+    align-items: center; 
+    background-color: rgba(244, 244, 244, 1);
+    padding: 13px 0px;
+    gap: 25px;
+}
+
+.top-info p{
+    color: rgba(170,170,170,1);
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 120px;
+    gap: 200px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: solid 1px rgba(224, 224, 224, 1);
+}
+
+header > .buttons{
+    display: flex;
+    gap: 100px;
+    margin-left: 67px;
+    margin-right: 140px;
+}
+
+header > .buttons p{
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+header > .showrooms{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header > .showrooms p{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.green-room-1{
+    width: 100%;
+    display: flex;
+    margin-top: 49px;
+    padding-left: 57px;
+    padding-right: 57px;
+}
+
+.design-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 136px;
+    margin-top: 93px;
+}
+
+.design-info > :first-child{
+    color: rgba(26,26,26,1);
+    font-size: 48px;
+    max-width: 355px;
+}
+
+.design-info > :last-child{
+    color: rgba(170,170,170,1);
+    font-size: 24px;
+    max-width: 569px;
+    line-height: 40px;
+}
+
+.collages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 32px;
+}
+
+.collage{
+    display: flex;
+    gap: 24px;
+}
+
+.collage > div > p{
+    color: rgba(26,26,26,1);
+    font-size: 24px;
+}
+
+.brands{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 212px;
+}
+
+.brands .p1{
+    font-size: 48px;
+    text-align: center;
+    color: rgba(26,26,26,1);
+}
+
+.brands .p2{
+    color: rgba(74,74,74,1);
+    font-size: 24px;
+    margin-top: 27px;
+    margin-bottom: 125px;
+}
+
+
+.slider > .slider-items{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.slider > .slider-items-info{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    margin-top: 23px;
+    justify-content: center;
+}
+
+.slider > .slider-items-info > .slider-item-info{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(229, 229, 229, 1);
+}
+
+.slider > .slider-items-info > .slider-item-info-picked{
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(70, 133, 110, 1);
+}
+
+.come-to-us{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 83px;
+    margin-left: 181px;
+}
+
+.come-to-us > :first-child{
+    color: rgba(26, 26, 26, 1);
+    font-size: 48px;
+    max-width: 1070px;
+}
+
+.come-to-us > :last-child{
+    color: rgba(70, 133, 110, 1);
+    font-size: 12px;
+    letter-spacing: 0.75px;
+}
+
+.cards{
+    display: flex;
+    margin-left: 181px;
+    margin-top: 59px;
+}
+
+.cards > .card{
+    width: 323px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews{
+    width: calc(100%-50px);
+    background-image: url("assets/img/smiling-girl.png");
+}
