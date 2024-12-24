@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -29,9 +30,9 @@ a{
 header{
     display: flex;
     align-items: center;
-    padding-left: 120px;
-    gap: 200px;
+    justify-content: space-around;
     padding-top: 24px;
+    width: 100%;
     padding-bottom: 24px;
     border-bottom: solid 1px rgba(224, 224, 224, 1);
 }
@@ -64,9 +65,8 @@ header > .showrooms p{
 .green-room-1{
     width: 100%;
     display: flex;
+    justify-content: center;
     margin-top: 49px;
-    padding-left: 57px;
-    padding-right: 57px;
 }
 
 .design-info{
@@ -75,6 +75,7 @@ header > .showrooms p{
     justify-content: center;
     gap: 136px;
     margin-top: 93px;
+    margin-bottom: 280px;
 }
 
 .design-info > :first-child{
@@ -114,6 +115,7 @@ header > .showrooms p{
     align-items: center;
     justify-content: center;
     margin-top: 212px;
+    margin-bottom: 190px;
 }
 
 .brands .p1{
@@ -129,10 +131,15 @@ header > .showrooms p{
     margin-bottom: 125px;
 }
 
-
 .slider > .slider-items{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; 
+}
+
+.slider > .slider-items img{
+    width: 100%;
+    height: 20%;
+    max-height: 1000px;
 }
 
 .slider > .slider-items-info{
@@ -158,31 +165,34 @@ header > .showrooms p{
 }
 
 .come-to-us{
-    width: 100%;
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 24px;
     margin-top: 83px;
-    margin-left: 181px;
+    gap: 24px;
 }
 
 .come-to-us > :first-child{
     color: rgba(26, 26, 26, 1);
     font-size: 48px;
     max-width: 1070px;
+    width: fit-content;
 }
 
 .come-to-us > :last-child{
     color: rgba(70, 133, 110, 1);
     font-size: 12px;
     letter-spacing: 0.75px;
+    width: fit-content;
 }
 
 .cards{
     display: flex;
-    margin-left: 181px;
+    width: 100%;
     margin-top: 59px;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .cards > .card{
@@ -194,4 +204,382 @@ header > .showrooms p{
 .reviews{
     width: calc(100%-50px);
     background-image: url("assets/img/smiling-girl.png");
+}
+
+.five-screen{
+    display: inline-block;
+    width: 95%;
+    height: 1067px;
+    background-image: url('./assets/img/background-five.png');
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin-top: 320px;
+}
+
+.five-txt{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 15%;
+    gap: 43px;
+}
+
+.five-txt div{
+    width: 467px;
+    height: 20%;
+}
+
+.five-txt div > p{
+    font-size: 32px;
+    line-height: 43px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.five-txt :last-child{
+    font-size: 21px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 18px;
+}
+
+.site-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    width: fit-content;
+    justify-content: center;
+    font-size: 61px;
+    line-height: 69px;
+    margin-top: 240px;
+    text-align: left;
+    color: rgba(170, 170, 170, 1);
+}
+
+.site-txt p{
+    width: fit-content;
+}
+
+.site-txt :last-child{
+    color: black;
+    margin-bottom: 179px;
+}
+
+.big-screen{
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-screen h1{
+    font-size: 43px;
+    line-height: 48px;
+    text-align: left;
+    color: rgba(26, 26, 26, 1);
+    font-weight: 400;
+}
+
+.big-screen p{
+    font-size: 21px;
+    line-height: 32px;
+    text-align: left;
+    color: rgba(170, 170, 170, 1);
+    white-space: nowrap;
+}
+
+.cards div{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.imgs{
+    display: flex;
+    align-items: center;
+    margin-top: 384px;
+    margin-bottom: 381px;
+    overflow: hidden;
+}
+
+.imgs img{
+    width: 100%;
+    max-height: 1100px;
+}
+
+.six-screen{
+    width: 90%;
+    height: 620px;
+    background-color: rgba(242, 242, 242, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.six-screen h1{
+    font-size: 61px;
+    line-height: 68px;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 84px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    width: 1067px;
+    height: 314px;
+    justify-content: center;
+    gap: 89px;
+}
+
+.info div{
+    width: 267px;
+    height: 133px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+}
+
+.info > :nth-child(2) {
+    gap: 43px;
+}
+
+.info p{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    color: rgba(26, 26, 26, 1);
+}
+
+.six-screen button{
+    width: 195px;
+    height: 67px;
+    background-color: rgba(70, 133, 110, 1);
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.six-screen > :nth-child(4){
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: rgba(170, 170, 170, 1);
+}
+
+footer{
+    background-color: rgba(43, 43, 43, 1);
+    width: 100%;
+    height: 826px;
+    margin-top: 105px;
+    display: inline-block;
+}
+
+.foot{
+    display: flex;
+    width: 1600px;
+    height: 628px;
+    margin-left: 233px;
+    margin-top: 129px;
+    align-items: flex-start;
+}
+
+.foot-link{
+    display: flex;
+    flex-direction: column;
+    width: 453px;
+    height: 628px;
+    margin-left: 92px;
+    margin-right: 92px;
+    color: white;
+    font-size: 19px;
+    line-height: 22px;
+    letter-spacing: 0.67px;
+    font-weight: 350;
+    gap: 27px; 
+}
+
+.foot-link div > :first-child{
+    margin-bottom: 19px;
+}
+
+.foot-link a{
+    color: white;
+}
+
+.link-part-1{
+    display: flex;
+    height: 264px;
+}
+
+.link-part-1 div{
+    display: flex;
+    flex-direction: column;
+    width: 227px;
+    height: 264px;
+    gap: 5px;
+}
+
+.link-part-2{
+    display: flex;
+}
+
+.link-part-2 div{
+    width: 227px;
+    height: 311px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.soc-link{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    font-size: 19px;
+    line-height: 28px;
+    letter-spacing: 0.67px;
+    text-align: left;
+    color: white;
+    font-weight: 350;
+    margin-right: 70px;
+}
+
+.soc-link div{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.form{
+    width: 500px;
+    height: 628px;
+}
+
+.input{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.input input{
+    width: 436px;
+    height: 72px;
+    background: none;
+    border-radius: 4px;
+    border: 1.33px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 21px;
+}
+
+.foot-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    color: white;
+    font-size: 19px;
+    line-height: 22px;
+    font-weight: 350;
+}
+
+.foot-txt :first-child{
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 0.67px;
+}
+
+.input p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 75px;
+    font-size: 19px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 297px;
+}
+
+.form :nth-child(3){
+    display: flex;
+    width: 556px;
+    height: 102px;
+    align-items: flex-start;
+    margin-bottom: 79px;
+}
+
+.form :nth-child(3) pre{
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 3.2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.check{
+    width: 37px;
+    height: 35px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 308px;
+    margin-left: -27px;
+}
+
+.box{
+    width: 37px;
+    height: 35px;
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin-top: 308px;
+    margin-left: -27px;
+    margin-right: 27px;
+    appearance: none;
+}
+
+.box+label::before {
+    border: 1px solid #adb5bd;
+}
+
+.form button{
+    width: 96px;
+    height: 80px;
+    border: none;
+    background: none;
+    margin-left: 348px;
+
+    color: white;
+    font-size: 19px;
+    line-height: 80px;
+    letter-spacing: 3px;
+    font-weight: 350;
+}
+
+.foot-right{
+    width: 230px;
+    height: 17px;
+    line-height: 17px;
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    white-space: nowrap;
+    transform: rotate(-90deg);
+    position: relative;
+    left: 458px;
+    bottom: 60px;
+
 }
