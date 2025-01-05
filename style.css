@@ -305,11 +305,12 @@ header > .showrooms p{
     margin-top: 384px;
     margin-bottom: 381px;
     overflow: hidden;
+    width: 100%;
 }
 
 .imgs img{
     width: 100%;
-    max-height: 1100px;
+    max-height: 700px;
 }
 
 .six-screen{
@@ -384,35 +385,36 @@ header > .showrooms p{
 }
 
 footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(43, 43, 43, 1);
     width: 100%;
     height: 826px;
     margin-top: 105px;
-    display: inline-block;
 }
 
 .foot{
     display: flex;
-    width: 1600px;
+    width: 100%;
     height: 628px;
-    margin-left: 233px;
-    margin-top: 129px;
+    padding: 0px 22px;
+    gap: 4%;
+    justify-content: center;
     align-items: flex-start;
 }
 
 .foot-link{
     display: flex;
     flex-direction: column;
-    width: 453px;
+    width: fit-content;
     height: 628px;
-    margin-left: 92px;
-    margin-right: 92px;
     color: white;
     font-size: 19px;
     line-height: 22px;
     letter-spacing: 0.67px;
     font-weight: 350;
-    gap: 27px; 
+    gap: 25px; 
 }
 
 .foot-link div > :first-child{
@@ -426,26 +428,31 @@ footer{
 .link-part-1{
     display: flex;
     height: 264px;
+    min-width: 78px;
+    gap: 75px;
 }
 
-.link-part-1 div{
+.link-part-1 > div{
     display: flex;
     flex-direction: column;
-    width: 227px;
-    height: 264px;
+    width: fit-content;
+    height: fit-content;
     gap: 5px;
+    min-width: 140px;
 }
 
 .link-part-2{
     display: flex;
+    gap: 75px;
 }
 
-.link-part-2 div{
-    width: 227px;
-    height: 311px;
+.link-part-2 > div{
+    width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     gap: 5px;
+    min-width: 140px;
 }
 
 .soc-link{
@@ -458,13 +465,23 @@ footer{
     text-align: left;
     color: white;
     font-weight: 350;
-    margin-right: 70px;
+    margin-left: 3%;
 }
 
-.soc-link div{
+.soc-link p{
+    min-width: 86px;
+}
+
+.link-imgs{
     display: flex;
     align-items: center;
-    gap: 17px;
+    gap: 11%;
+    min-width: 120px;
+}
+
+.link-imgs a{
+    min-width: 17%;
+    width: 100%;
 }
 
 .form{
@@ -505,13 +522,14 @@ footer{
 
 .input p {
     display: flex;
+    justify-content: flex-end;
     align-items: center;
     gap: 5px;
     margin-bottom: 75px;
     font-size: 19px;
     line-height: 28px;
+    width: 88%;
     color: rgba(255, 255, 255, 0.5);
-    margin-left: 297px;
 }
 
 .form :nth-child(3){
@@ -524,29 +542,18 @@ footer{
 
 .form :nth-child(3) pre{
     font-size: 15px;
-    line-height: 17px;
     letter-spacing: 3.2px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.check{
-    width: 37px;
-    height: 35px;
-    background: none;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    margin-top: 308px;
-    margin-left: -27px;
-}
 
 .box{
-    width: 37px;
-    height: 35px;
+    width: 28px !important;
+    height: 26px !important;
     background: none;
     border: 1px solid rgba(255, 255, 255, 0.5);
     margin-top: 308px;
-    margin-left: -27px;
-    margin-right: 27px;
     appearance: none;
 }
 
@@ -554,24 +561,27 @@ footer{
     border: 1px solid #adb5bd;
 }
 
-.form button{
+.footer-sign-up-button{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.footer-sign-up-button button{
     width: 96px;
     height: 80px;
     border: none;
     background: none;
-    margin-left: 348px;
-
     color: white;
     font-size: 19px;
     line-height: 80px;
     letter-spacing: 3px;
-    font-weight: 350;
+    font-weight: 400;
 }
 
 .foot-right{
     width: 230px;
     height: 17px;
-    line-height: 17px;
     font-size: 15px;
     color: white;
     text-transform: uppercase;
